@@ -1,6 +1,4 @@
-"use strict"
+let js = 'amazing'
+console.log(js)
 
-
-const name = "Azamat"
-
-console.log(name)
+alert(js)
