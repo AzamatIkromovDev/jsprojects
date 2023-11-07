@@ -1,4 +1,7 @@
 let js = 'amazing'
 console.log(js)
 
-alert(js)
+const javaScript = true
+
+const buddy = 'hi buddy`'
+
