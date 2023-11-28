@@ -235,3 +235,55 @@ target = 9;
 // };
 //
 // twoSum(nums, target);
+
+// const given_string = prompt("write your string ");
+// let answer = given_string;
+//
+// const checkString = (str) => {
+//   if (!str.startsWith("Py")) {
+//     return console.log("Py" + answer);
+//   } else {
+//     return answer;
+//   }
+// };
+//
+// checkString(given_string);
+
+// const removeCharacter = (str, pos) => {
+//   if (pos < 0 || pos > str.length) {
+//     console.log("Xata pos");
+//     return str;
+//   }
+//
+//   let changeCharacter = str.substring(0, pos) + str.substring(pos + 1);
+//   return changeCharacter;
+// };
+// const a = "Monday";
+//
+// console.log(removeCharacter(a, 3));
+
+// Write a JavaScript program to create a new string from a given string by changing the position of the first and last characters.
+// The string length must be broader than or equal to 1
+
+// let givenString = "Azamat";
+// const createCharacter = (str) => {
+//   let firstCharacter = str.slice(0, 1);
+//   let lastCharacter = str.slice(-1);
+//   str = str.slice(1, -1);
+//   return console.log(lastCharacter + str + firstCharacter);
+// };
+// createCharacter(givenString);
+
+// Write a JavaScript program to check whether a given positive number is a multiple of 3 or 7.
+
+// const checkNumber = (num) => {
+//   if (num < 0) {
+//     console.log("give me positive number");
+//   } else {
+//     const answer1 = num * 3;
+//     const answer2 = num * 7;
+//     console.log(answer1);
+//     console.log(answer2);
+//   }
+// };
+// checkNumber(5);
