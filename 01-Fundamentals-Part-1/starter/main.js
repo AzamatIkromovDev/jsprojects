@@ -287,3 +287,109 @@ target = 9;
 //   }
 // };
 // checkNumber(5);
+
+// Write a JavaScript program to create a string from a given string. This is done by taking the last 3 characters and adding them at both the front and back.The string length must be 3 or more.
+
+// let name = "Monday";
+// const createString = (str) => {
+//   let lastCharacter = str.slice(0, -3);
+//   str = str.slice(0, -3);
+//   const answer = lastCharacter + str + lastCharacter;
+//   return answer;
+// };
+//
+// console.log(createString(name));
+
+// let name = "JavaScript";
+//
+// const checkAnswer = (str) => {
+//   str = str.slice(0, 4).toLowerCase();
+//   const answer = str;
+//   if (answer === "java") {
+//     console.log("Correct");
+//   } else {
+//     console.log("Mistake");
+//   }
+// };
+//
+// checkAnswer(name);
+
+// let number1 = 12;
+// let number2 = 11;
+//
+// const checkNumber = (num1, num2) => {
+//   return (num1 >= 50 && num1 <= 99) || (num2 >= 50 && num2 <= 99);
+// };
+//
+// console.log(checkNumber(number1, number2));
+//
+// let number1 = 15;
+// let number2 = 10;
+// let number3 = 66;
+//
+// const checkNumber = (num1, num2, num3) => {
+//   return (
+//     (num1 >= 50 && num1 <= 99) ||
+//     (num2 >= 50 && num2 <= 99 && num3 >= 50 && num3 <= 99)
+//   );
+// };
+//
+// console.log(checkNumber(number1, number2, number3));
+
+// let script = "JavaScript";
+
+// console.log(script.substring(4));
+
+// const checkScipt = (str) => {
+//   if (str.length <= 5) {
+//     return str;
+//   }
+//
+//   let answer = str.substring(4);
+//   if (answer === "Script") {
+//     return answer;
+//   } else {
+//     return script;
+//   }
+// };
+//
+// console.log(checkScipt(script));
+
+// const checkBiggestNumber = (num1, num2, num3) => {
+//   return Math.max(num1, num2, num3);
+// };
+
+// const closestTo100 = (value1, value2) => {
+//   const targetValue = 100;
+//
+//   const diff1 = Math.abs(targetValue - value1);
+//   const diff2 = Math.abs(targetValue - value2);
+//   if (diff1 < diff2) {
+//     return value1;
+//   } else if (diff2 < diff1) {
+//     return value2;
+//   } else {
+//     return "Both values are equally close to 100";
+//   }
+// };
+//
+// let num1 = 40;
+// let num2 = 50;
+//
+// // Call the function and log the result
+// console.log(closestTo100(num1, num2));
+
+// const inRange = (num1, num2) => {
+//   const range1 = num1 >= 40 && num1 <= 60;
+//   const range2 = num1 >= 70 && num1 <= 100;
+//
+//   const range3 = num2 >= 40 && num2 <= 60;
+//   const range4 = num2 >= 70 && num2 <= 100;
+//
+//   return range1 || range2 || range3 || range4;
+// };
+//
+// let number1 = 45;
+// let number2 = 80;
+//
+// console.log(inRange(number1, number2));
