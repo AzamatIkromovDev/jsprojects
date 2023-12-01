@@ -376,7 +376,7 @@ target = 9;
 // let num1 = 40;
 // let num2 = 50;
 //
-// // Call the function and log the result
+
 // console.log(closestTo100(num1, num2));
 
 // const inRange = (num1, num2) => {
