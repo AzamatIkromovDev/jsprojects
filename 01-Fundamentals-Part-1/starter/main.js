@@ -205,8 +205,8 @@
 //   console.log(`same`);
 // }
 
-nums = [2, 7, 11, 15];
-target = 9;
+// nums = [2, 7, 11, 15];
+// target = 9;
 
 // const twoSum = (nums, target) => {
 //   for (i = 0; i < nums.lenght; i++) {
@@ -393,3 +393,137 @@ target = 9;
 // let number2 = 80;
 //
 // console.log(inRange(number1, number2));
+
+// const findInteger = (num1, num2) => {
+//   if ((num1 >= 40 && num1 <= 60) || (num2 >= 40 && num2 <= 60)) {
+//     const answer = Math.abs(num1 - num2);
+//     if (num1 > num2) {
+//       return console.log("NUmber 1 is the biggest");
+//     } else if (num2 > num1) {
+//       return console.log("number2 is the biggest");
+//     }
+//   } else {
+//     return console.log("They are not in rage in 40, 60");
+//   }
+// };
+//
+// let number1 = 41;
+// let number2 = 53;
+//
+// findInteger(number1, number2);
+
+// let name = "Azamat";
+// const checkGivenCharacter = (str) => {
+//   if (str[2] === "a" && str[4] === "a") {
+//     console.log("They are both 'a'.");
+//   } else {
+//     console.log("They are not both 'a'.");
+//   }
+// };
+//
+// checkGivenCharacter(name);
+
+// let num1 = 123456;
+//
+// const checkGivenNumber = (num) => {
+//   num = num.toString().split("").slice(-1, -3);
+//   console.log(num);
+// };
+//
+// checkGivenNumber(num1);
+
+// const lastDigitsSame = (num1, num2, num3) => {
+//   const lastDigit1 = num1 % 10;
+//   const lastDigit2 = num2 % 10;
+//   const lastDigit3 = num3 % 10;
+//
+//   return lastDigit1 === lastDigit2 && lastDigit2 === lastDigit3;
+// };
+//
+// const num1 = 123;
+// const num2 = 456;
+// const num3 = 789;
+//
+// if (lastDigitsSame(num1, num2, num3)) {
+//   console.log("The last digits of the three numbers are the same.");
+// } else {
+//   console.log("The last digits of the three numbers are different.");
+// }
+
+// const checkString = (str) => {
+//   if (str.length < 3) {
+//     return str.toUpperCase();
+//   } else {
+//     const firstThreeChars = str.substring(0, 3).toLowerCase();
+//     const restOfString = str.substring(3);
+//     return firstThreeChars + restOfString;
+//   }
+// };
+
+// const checkExam = (examType, totalMarks) => {
+//   if (examType === "Final-exam" && totalMarks >= 90) {
+//     return true;
+//   } else if (
+//     examType !== "Final-exam" &&
+//     totalMarks >= 89 &&
+//     totalMarks <= 100
+//   ) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+// const computeSum = (num1, num2) => {
+//   const sum = num1 + num2;
+//
+//   if (sum >= 50 && sum <= 80) {
+//     return 65;
+//   } else {
+//     return 80;
+//   }
+// };
+
+// const checkForEight = (num1, num2) => {
+//   const sum = num1 + num2;
+//   const difference = Math.abs(num1 - num2);
+//
+//   return num1 === 8 || num2 === 8 || sum === 8 || difference === 8;
+// };
+
+// const checkNumber = (num1, num2, num3) => {
+//   if (num1 === num2 && num2 === num3) {
+//     return 30;
+//   } else if (num1 === num2 || num1 === num3 || num2 === num3) {
+//     return 40;
+//   } else {
+//     return 20;
+//   }
+// };
+
+// const checkNumberOrder = (num1, num2, num3) => {
+//   if (num1 < num2 && num2 < num3) {
+//     return "Strict mode";
+//   } else if (num1 <= num2 && num2 <= num3) {
+//     return "Soft mode";
+//   } else {
+//     return "Not in order";
+//   }
+// };
+
+// const checkNumber = (num1, num2, num3) => {
+//   return (num1 >= 20 && num1 < num2 && num1 < num3) ||
+//       (num2 >= 20 && num2 < num1 && num2 < num3) ||
+//       (num3 >= 20 && num3 < num1 && num3 < num2);
+// };
+
+// const checkConditions = (num1, num2) => {
+//   const sum = num1 + num2;
+//   const difference = Math.abs(num1 - num2);
+//
+//   return num1 === 15 || num2 === 15 || sum === 15 || difference === 15;
+// };
+
+// const inRange = (num) => {
+//   return num >= 40 && num <= 10000;
+// };
