@@ -614,3 +614,46 @@
 // };
 //
 // console.log(countPandT("Azamatpp"));
+
+// const divededNumber = (num1, num2) => {
+//   let result = num1 / num2;
+//   const convertedStr = result.toLocaleString("en-US");
+//   return convertedStr;
+// };
+//
+// console.log(divededNumber(15, 20));
+
+// const repeatString = (str, num) => {
+//   let result = "";
+//   result = str.repeat(num);
+//   return result;
+// };
+//
+// console.log(repeatString("Azamat, ", 5));
+
+// const repeatStr = (str) => {
+//   let result;
+//   if (str.length >= 3) {
+//     str = str.slice(-3);
+//     result = str.repeat(4);
+//   } else {
+//     ("Invalid String");
+//   }
+//   return result;
+// };
+//
+// console.error(repeatStr("Azamat"));
+
+// const halfstring = (str) => {
+//   const result = str.length / 2;
+//   const half = str.slice(0, result);
+//   return half;
+// };
+// console.log(halfstring("Azamat"));
+
+// const createString = (str) => {
+//   const first = str.substring(1, str.length - 1);
+//   return first;
+// };
+//
+// console.log(createString("Azamat"));
