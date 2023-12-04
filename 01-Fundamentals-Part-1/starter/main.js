@@ -527,3 +527,90 @@
 // const inRange = (num) => {
 //   return num >= 40 && num <= 10000;
 // };
+
+// const convertHours = (hours) => {
+//   if (hours < 0 || hours > 23) {
+//     return "invalid Hours";
+//   }
+//   const minutes = hours > 12 ? "pm" : "am";
+//   const convertedHours = hours % 12 === 0 ? 12 : hours % 12;
+//
+//   return `${convertedHours}: ${minutes}`;
+// };
+//
+// const h = 11;
+// console.log(convertHours(h));
+
+// const groupArray = (arr) => {
+//   let oddArray = [];
+//   let evenArray = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i % 2) {
+//       evenArray.push(arr[i]);
+//     } else {
+//       oddArray.push(arr[i]);
+//     }
+//   }
+//   console.log("Odd Array:", oddArray);
+//   console.log("Even Array:", evenArray);
+// };
+//
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// groupArray(numbers);
+
+// const createArray = (column, row, value) => {
+//   return Array.from({ length: row }, () => Array(column).fill(value));
+
+// for (let i = 0; i < column; i++) {
+//   const rowArray = new Array(row).fill(value);
+//   resultArray.push(rowArray);
+// }
+// return resultArray;
+// let resultArray = [];
+// for (let i = 0; i < row; i+  +) {
+//   let createdRow = [];
+//
+//   for (let j = 0; j < column; j++) {
+//     createdRow.push(value);
+//   }
+//   resultArray.push(createdRow);
+// }
+// };
+
+// const rowarray = 5;
+// const columnarray = 4;
+// const initialValue = 7;
+//
+// console.log(createArray(columnarray, rowarray, initialValue));
+
+// const countVowels = (str) => {
+//   let loweredStr = str.toLowerCase();
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   let count = 0;
+//   for (let char of loweredStr) {
+//     if (vowels.includes(char)) {
+//       count++;
+//     }
+//   }
+//   return count;
+// };
+//
+// console.log(countVowels("Azamat"));
+
+// const countPandT = (str) => {
+//   const lowerdStr = str.toLowerCase();
+//   const arrayp = ["p"];
+//   let countofP = 0;
+//   let countofT = 0;
+//   for (char of lowerdStr) {
+//     if (arrayp.includes(char)) {
+//       countofP++;
+//     }
+//     if (char === "t") {
+//       countofT++;
+//     }
+//   }
+//   return `P's is ${countofP} and T's is ${countofT} `;
+// };
+//
+// console.log(countPandT("Azamatpp"));
