@@ -657,3 +657,14 @@
 // };
 //
 // console.log(createString("Azamat"));
+
+// const concatenateString = (str1, str2) => {
+//   str1 = str1.substring(1);
+//   str2 = str2.substring(1);
+//   let firstsrt1 = str1;
+//   let secondStr = str2;
+//   const result = firstsrt1.concat(secondStr);
+//   return result;
+// };
+//
+// console.log(concatenateString("Azamat", "Monday"));
