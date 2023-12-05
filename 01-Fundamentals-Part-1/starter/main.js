@@ -668,3 +668,77 @@
 // };
 //
 // console.log(concatenateString("Azamat", "Monday"));
+
+// const movelast = (str) => {
+//   let result = "";
+//   if (str.length >= 3) {
+//     let laststring = str.substring(str.length - 3);
+//     str = str.slice(0, -3);
+//     let firstCharater = str;
+//     result = laststring + firstCharater;
+//   } else {
+//     console.log("String must bu more than 4");
+//   }
+//   return result;
+// };
+//
+// console.log(movelast("Azamat"));
+
+// const middleThree = (str) => {
+//   let length = str.length;
+//   let middlethreeCharacter = "";
+//   if (str.length >= 3) {
+//     if (str.length % 2 === 1) {
+//       middlethreeCharacter = Math.floor(length / 2);
+//       middlethreeCharacter = str.substring(
+//         middlethreeCharacter - 1,
+//         middlethreeCharacter + 2,
+//       );
+//     } else {
+//       console.log("String Not odd number");
+//     }
+//   } else {
+//     console.log("String number must be 3 or more");
+//   }
+//   return middlethreeCharacter;
+// };
+//
+// console.log(middleThree("Azamatakkll"));
+
+// const concatenate = (str1, str2) => {
+//   const minLength = Math.min(str1.length, str2.length);
+//   const maxLength = Math.max(str1.length, str2.length);
+//
+//   let result = `${str1}${str2}`;
+//
+//   if (str1.length !== str2.length) {
+//     result = result.slice(0, minLength);
+//   }
+//
+//   return result;
+// };
+//
+// const string1 = "Azamat";
+// const string2 = "Ikromov";
+//
+// const concatenatedResult = concatenate(string1, string2);
+// console.log(concatenatedResult);
+
+// const checkTheString = (str) => {
+//   let lastCharacter = "";
+//   str = str.substring(str.length - 6);
+//   lastCharacter = str;
+//   if (str.length >= 6) {
+//     if (lastCharacter === "Script") {
+//       console.log("Script is existed");
+//     } else {
+//       console.log("Script Not Existed");
+//     }
+//   } else {
+//     console.log("Your string must be 6 or more");
+//   }
+//
+//   return lastCharacter;
+// };
+//
+// console.log(checkTheString("AzamatIkromov"));
