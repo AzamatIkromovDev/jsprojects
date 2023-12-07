@@ -742,3 +742,15 @@
 // };
 //
 // console.log(checkTheString("AzamatIkromov"));
+
+// const cityName = (str) => {
+//   let characters = str.slice(0, 3);
+//
+//   if (characters === "Los" || characters === "New") {
+//     return str;
+//   } else {
+//     return "empty";
+//   }
+// };
+//
+// console.log(cityName("NewYork"));
