@@ -1,3 +1,5 @@
+"use strict";
+
 // const date = new Date();
 // const day = date.getDay();
 // const currentTime = date.getHours();
@@ -754,3 +756,119 @@
 // };
 //
 // console.log(cityName("NewYork"));
+
+// const createstr = (str) => {
+//   let firstString = str.substring(0, 2);
+//   let lastrString = str.substring(str.length - 2);
+//   return `${firstString}${lastrString}`;
+// };
+// console.log(createstr("Monday"));
+
+// let array = [1, 2, 3, 4];
+//
+// const sumofArray = (ar) => {
+//   return ar[0] + ar[1] + ar[2];
+// };
+//
+// console.log(sumofArray(array));
+
+// const rotateEl = (arr) => {
+//   return arr.reverse();
+// };
+// let array = [1, 2, 3, 4];
+//
+// console.log(rotateEl(array));
+
+// let numbers = 123564789;
+// const reverseNumber = (arr) => {
+//   let toString = arr.toString();
+//   let reversedStr = "";
+//   if (toString.length % 2 === 0) {
+//     for (let i = toString.length - 1; i >= 0; i--) {
+//       reversedStr += toString[i];
+//     }
+//     let swappedStr = "";
+//     for (let i = 0; i < reversedStr.length; i += 2) {
+//       swappedStr += reversedStr[i + 1] + reversedStr[1];
+//     }
+//   }
+// };
+//
+// reverseNumber(numbers);
+
+// const changeCapitalization = (str) => {
+//   let result = "";
+//
+//   for (let char of str) {
+//     if (char === char.toUpperCase()) {
+//       result += char.toLowerCase();
+//     } else {
+//       result += char.toUpperCase();
+//     }
+//   }
+//
+//   return result;
+// };
+//
+// const inputString = "Azamat";
+// const changedString = changeCapitalization(inputString);
+// console.log(changedString);
+
+// const change = (str) => {
+//   let first = str.slice(0, 3);
+//   let second = str.slice(str.length - 3);
+//   return second.concat(first);
+// };
+//
+// let num = [1, 2, 3, 4, 5, 6];
+//
+// console.log(change(num));
+
+// const sumOfstring = (str) => {
+//   let result = 0;
+//   for (let char of str) {
+//     if (char >= "0" && char <= "9") {
+//       result += Number(char);
+//     } else {
+//       console.log("there is no Number");
+//     }
+//   }
+//   return result;
+// };
+//
+// console.log(sumOfstring("Azamat77"));
+
+// const cube = (x) => {
+//   let result = 1;
+//   for (let i = 0; i < 3; i++) {
+//     result *= x;
+//   }
+//   return result;
+// };
+//
+// console.log(cube(5));
+
+// const findMaxN = (givenInteger) => {
+//   let sum = 0;
+//   let n = 0;
+//
+//   while (sum <= givenInteger) {
+//     n++;
+//     sum += n;
+//   }
+//
+//   return n - 1;
+// };
+//
+// // Example usage:
+// const givenInteger = 20;
+// const maxN = findMaxN(givenInteger);
+// console.log(
+//   `The maximum n such that 1 + 2 + ... + n <= ${givenInteger} is: ${maxN}`,
+// );
+
+// const sortNumbers = (x) => {
+//   return x.sort();
+// };
+//
+// console.log(sortNumbers(["bb", "aa", "cc", "Azamat", "Baxodir"]));
