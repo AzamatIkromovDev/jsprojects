@@ -995,7 +995,7 @@
 //TODO Write a JavaScript program to test whether a given array of integers contains 30 or 40 twice. The array length should be 0, 1, or 2.
 
 const users = [
-  { id: 1, name: "User1", is_active: true, age: 10 },
+  { id: 1, name: "User1", is_active: false, age: 10 },
   { id: 2, name: "User2", is_active: true, age: 5 },
   { id: 3, name: "User3", is_active: true, age: 5 },
   { id: 4, name: "User4", is_active: true, age: 5 },
@@ -1007,19 +1007,30 @@ const users = [
 //     console.log(`User name ${user.name}Salom ${user.is_active}`);
 //   }
 // }
-
+//
 // for (let user of users) {
 //   if (user.id % 2 !== 0) {
 //     console.log(`User with even Number ${user.id}`);
 //   }
 // }
 
-let result = true;
+// let result = true;
+//
+// for (let user of users) {
+//   if (!user.is_active) result = false;
+// }
+// if (!result) {
+//   users.forEach((user) => (user.is_active = false));
+// }
+// console.log(users);
 
-for (let user of users) {
-  if (!user.is_active) result = false;
-}
-if (!result) {
-  users.forEach((user) => (user.is_active = false));
-}
-console.log(users);
+// const avarageAge = (users) => {
+//   let sum = 0;
+//   for (let user of users) {
+//     sum += user.age;
+//   }
+//   const result = sum / 5;
+//   return result;
+// };
+//
+// console.log(avarageAge(users));
