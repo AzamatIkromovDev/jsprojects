@@ -906,3 +906,120 @@
 // console.log(charCounts("Azamat Ikromov"));
 //
 // /[a-z0-9]/.test(char);
+
+// let array = [1, 2, 3];
+//
+// const reverseArray = (arr) => {
+//   let result = [];
+//   if (arr.length <= 3) {
+//     result.push(arr.toReversed());
+//   } else {
+//     console.log("Array must be 3");
+//   }
+//   return result;
+// };
+//
+// console.log(reverseArray(array));
+
+// const findLargestValue = (arr) => {
+//   //first loop
+//   //MAth.max
+//   let result = [];
+//   let fist = Math.max(...arr);
+//   let last = arr[arr.length - 1];
+//   for (let char of arr) {
+//     if (fist > last) {
+//       result.push(fist);
+//     } else {
+//       result.push(last);
+//     }
+//   }
+//   return result;
+// };
+//
+// console.log(findLargestValue([23, 30, 40]));
+
+// const createArray = (arr1, arr2) => {
+//   let result = [];
+//
+//   if (arr1.length <= 3 && arr2.length <= 3) {
+//     let first = arr1[1];
+//     let second = arr2[1];
+//     result.push(first);
+//     result = result.concat(second);
+//   } else {
+//     console.log("Array  must be 3 character");
+//   }
+//   return result;
+// };
+//
+// console.log(createArray([1, 2, 3], [5, 6, 7]));
+
+// const sortedString = (arr) => {
+//   let result = [];
+//
+//   for (let char of arr) {
+//     let sortedString = char.split("").sort().join("");
+//     result.push(sortedString);
+//   }
+//
+//   return result;
+// };
+//
+// console.log(sortedString(["Azamat", "mondayBukhara", "juma"]));
+
+// const sortByLength = (arr) => {
+//   arr.sort((a, b) => a.length - b.length || arr.indexOf(a) - arr.indexOf(b));
+//
+//   return arr;
+// };
+//
+// const stringsArray = ["apple", "banana", "orange", "kiwi", "pear"];
+// const sortedArray = sortByLength(stringsArray);
+//
+// console.log(sortedArray);
+
+// //TODO Write a JavaScript program to test whether an array of integers of length 2 contains 1 or 3.
+//
+// let array = [5, 5];
+// const charckArray = (arr) => {
+//   if (arr.length === 2) {
+//     return !arr.includes(1) || !arr.includes(3);
+//   } else {
+//     console.log("Array must be 2");
+//   }
+// };
+//
+// console.log(charckArray(array));
+
+//TODO Write a JavaScript program to test whether a given array of integers contains 30 or 40 twice. The array length should be 0, 1, or 2.
+
+const users = [
+  { id: 1, name: "User1", is_active: true, age: 10 },
+  { id: 2, name: "User2", is_active: true, age: 5 },
+  { id: 3, name: "User3", is_active: true, age: 5 },
+  { id: 4, name: "User4", is_active: true, age: 5 },
+  { id: 5, name: "User5", is_active: true, age: 10 },
+];
+
+// for (const user of users) {
+//   if (user.is_active === true) {
+//     console.log(`User name ${user.name}Salom ${user.is_active}`);
+//   }
+// }
+
+// for (let user of users) {
+//   if (user.id % 2 !== 0) {
+//     console.log(`User with even Number ${user.id}`);
+//   }
+// }
+
+let result = true;
+
+for (let user of users) {
+  if (!user.is_active) result = false;
+}
+if (!result) {
+  users.forEach((user) => (user.is_active = false));
+}
+console.log(users);
