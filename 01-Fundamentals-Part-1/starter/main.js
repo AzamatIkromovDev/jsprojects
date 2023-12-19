@@ -994,13 +994,13 @@
 
 //TODO Write a JavaScript program to test whether a given array of integers contains 30 or 40 twice. The array length should be 0, 1, or 2.
 
-const users = [
-  { id: 1, name: "User1", is_active: false, age: 10 },
-  { id: 2, name: "User2", is_active: true, age: 5 },
-  { id: 3, name: "User3", is_active: true, age: 5 },
-  { id: 4, name: "User4", is_active: true, age: 5 },
-  { id: 5, name: "User5", is_active: true, age: 10 },
-];
+// const users = [
+//   { id: 1, name: "User1", is_active: false, age: 10 },
+//   { id: 2, name: "User2", is_active: true, age: 5 },
+//   { id: 3, name: "User3", is_active: true, age: 5 },
+//   { id: 4, name: "User4", is_active: true, age: 5 },
+//   { id: 5, name: "User5", is_active: true, age: 10 },
+// ];
 
 // for (const user of users) {
 //   if (user.is_active === true) {
@@ -1034,3 +1034,48 @@ const users = [
 // };
 //
 // console.log(avarageAge(users));
+
+// const age = 25;
+// age <= 24 ? console.log("You are under 25") : console.log("You are older ");
+// //TODO Write a JavaScript program to add two digits to a given positive integer of length two.
+//
+// let result;
+// const addTwoDigits = (num) => {
+//   num = String(num);
+//   let first_el = num[0];
+//   let last_element = num[1];
+//   result = Number(first_el) + Number(last_element);
+//   return result;
+// };
+//
+// console.log(addTwoDigits(50));
+
+//TODO Write a JavaScript program to find the longest string from a given array of strings.
+
+function findLongestString(strings) {
+  if (!Array.isArray(strings) || strings.length === 0) {
+    return "Input is not a valid array of strings.";
+  }
+
+  let longestString = strings[0];
+
+  for (let i = 1; i < strings.length; i++) {
+    const currentString = strings[i];
+    cont currentStr = strings[i]
+
+    if (currentString.length > longestString.length) {
+      longestString = currentString;
+    }
+  }
+
+  return longestString;
+}
+
+const stringArray = ["apple", "banana", "kiwi", "strawberry", "blueberry"];
+const longestString = findLongestString(stringArray);
+
+console.log("Longest string:", longestString);
+
+console.log("Hello")
+
+

@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 
+
     const task = input.value;
 
     const task_el = document.createElement("div");
@@ -21,6 +22,10 @@ window.addEventListener("load", () => {
     task_input_el.type = "text";
     task_input_el.value = task;
     task_input_el.setAttribute("readonly", "readonly");
+
+    
+
+
 
     task_content_el.appendChild(task_input_el);
 
@@ -57,6 +62,8 @@ window.addEventListener("load", () => {
 
     task_delete_el.addEventListener("click", (e) => {
       list_el.removeChild(task_el);
+
     });
   });
 });
+
